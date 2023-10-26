@@ -1,0 +1,102 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    --primary: #3c474b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary);
+    color: #80ced7;
+    padding: 1em;
+    text-align: center;
+}
+
+h2 {
+    color: #80ced7;
+}
+
+h3 {
+    color: #f2dda4;
+}
+
+nav {
+    background-color: var(--primary); /* Darker background for the navigation bar */
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #f2dda4;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover, .selected {
+    color: #80ced7; /* Accent color on hover */
+}
+
+section {
+    padding: 2em;
+    flex: 1;
+    overflow: auto;
+}
+
+footer {
+    background-color: var(--primary);
+    color: #80ced7;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Styling for links within the section */
+#learning-guides a {
+    display: block;
+    margin-bottom: 10px;
+    color: #61dafb; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+#learning-guides a:hover {
+    color: #f2dda4; /* Change color on hover */
+}
+
+#events a, #the-enigma a {
+    display: block;
+    margin-bottom: 10px;
+    color: #61dafb; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+#events a:hover, #the-enigma a:hover {
+    color: #f2dda4; /* Change color on hover */
+}
+
+#about-us a {
+    display: block;
+    margin-bottom: 10px;
+    color: #61dafb; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+#about-us a:hover {
+    color: #f2dda4; /* Change color on hover */
+}
